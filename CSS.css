@@ -1,0 +1,870 @@
+body{
+    color: rgb(0, 85, 85);
+font-family: sans-serif, helvetica, arial ;
+    margin: 0px;
+    max-width: 100%;
+    min-width: 640px;
+    font-size: 1.3rem ;
+    font-weight: bold;
+    background: black;
+    background-image: url(index.png);
+}
+
+@media screen and (max-width:840px){
+    body{
+        font-size: 1.5rem; 
+    }
+}
+
+h1 {
+    text-decoration: underline;
+    color: yellowgreen;
+    text-transform: uppercase;
+    max-width: 100%;
+    letter-spacing: 5.7vw;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+}
+
+h2{
+    font-size: 1.7rem ;
+    color: rgb(200, 100,50);
+    margin:0px;
+    padding-top: 38px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+}
+
+h3{
+    padding-left: 40px;
+}
+
+nav{
+    min-height: 28px;
+    box-shadow: inset 0px -10px 20px -5px rgb(255, 115, 0, 0.45);
+    display: inline;
+    flex-direction: row;
+}
+
+.menu{
+    border-radius: 0px 0px 40px 40px;
+    height: 32px;
+    margin-top: -2px;
+}
+
+.menu2{
+width: 100%; 
+margin: right;
+list-style: none;
+}
+
+nav a, nav a div{    
+    height: 100%;
+    color: rgb(255, 115, 0);
+    padding: 0cm;
+    margin: 0cm;
+    text-decoration:none;
+    font-size: 1.15rem;
+    font-size-adjust: inherit;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;      
+}
+
+.sticky:hover{
+    height: 30px;
+}
+
+nav a:hover, nav a div:hover{
+    color: rgb(0, 1, 39);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+nav li:hover{
+     background-color:rgb(255, 115, 0);
+     background-image: linear-gradient(to right, 
+     rgb(63, 28, 0), 
+     rgb(100, 45, 0), 
+     rgb(150, 67, 0) ,
+     rgb(230, 103, 0), 
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0), 
+     rgb(230, 103, 0), 
+     rgb(150, 67, 0), 
+     rgb(100, 45, 0), 
+     rgb(63, 28, 0));
+    border-radius: 0px 0px 40px 40px;
+    white-space: nowrap;
+}
+
+nav ul .dependsOnScroll {
+     background-color:rgb(255, 115, 0);
+     background-image: linear-gradient(to right, 
+     rgb(63, 28, 0), 
+     rgb(100, 45, 0), 
+     rgb(150, 67, 0) ,
+     rgb(230, 103, 0), 
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0),
+     rgb(255, 115, 0), 
+     rgb(230, 103, 0), 
+     rgb(150, 67, 0), 
+     rgb(100, 45, 0), 
+     rgb(63, 28, 0));
+    border-radius: 0px 0px 40px 40px;
+    white-space: nowrap;
+    color: rgb(0, 1, 39);  
+}
+    nav ul .dependsOnScroll a div{
+        color: rgb(0, 1, 39);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+nav li{
+    text-align: center;
+    width: 100%;
+    padding: 0cm;
+    margin: 0cm;
+   height: 31px;
+   min-width: 10px;
+}
+
+nav, nav div, nav ul, nav tr, nav li, nav a{
+    padding: 0px;
+    margin: 0px;
+}
+
+.sticky{
+    position: fixed;
+    z-index: 1; 
+    width: 100%;
+    padding-right: 1px;
+    padding-top: 2px;
+    min-width: 640px;
+    border-radius: 0px 0px 40px 40px;
+    background-color: transparent;
+    overflow: hidden;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.sticky li{
+    
+    background-color: black;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0,0,0), rgb(87, 36, 0), rgb(56, 27, 0));
+    background: linear-gradient(180deg, rgba(0, 0, 0), rgba(122, 91, 91, 0.8) 150%),
+        linear-gradient(240deg, rgb(255, 115, 0), rgb(255, 115, 0) ),
+        linear-gradient(300deg,rgb(255, 115, 0), rgb(255, 115, 0));
+    padding-top: 0px;
+    border-radius: 0px 0px 40px 40px;
+}
+.sticky div{
+    border-radius: 0px 0px 40px 40px;
+}
+
+.LOGO{
+    float: left;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: -40px;
+    padding-right: 10px;
+}
+
+#header {
+background-image: url(assets/image/background.jpg);
+height: 20px;
+overflow-y: hidden;
+max-width: 100%;
+background-size: 100%;
+background-repeat: round;
+min-width: 580px;
+background-attachment: fixed;
+padding: 10px 0px 100px 50px;
+font-size: 0.9rem;
+white-space: nowrap;
+border-right: solid rgb(200, 100,50);
+border-left: solid rgb(200, 100,50);
+}
+
+section{
+padding: 0px 35px 15px 35px;
+padding-bottom: 20px;
+
+}
+    
+#content{
+    box-shadow: inset 0px 0px 20px 5px rgb(255, 115, 0, 0.45);
+    border-radius: 0px 0px 40px 40px;
+    border-right: solid rgb(200, 100,50);
+    border-left: solid rgb(200, 100,50);
+    border-bottom: solid rgb(200, 100,50);
+}
+
+#onasS p{
+    border-radius: 20px 40px 0px 40px;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    padding: 15px 30px 15px 30px;
+    margin: 0px;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45);
+}
+
+.prvnislovo{
+    color: blue;
+}
+
+.img1{
+    float: left;
+    width: 200px;
+}
+
+.container{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+div .container ol p {
+    text-decoration: underline;
+    padding-bottom: 8px;
+    margin-left: -20px;
+}
+
+.box{
+    width: 49%;
+    height: auto;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    box-sizing: border-box;
+    border-radius: 20px 40px 40px 40px;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.45);  
+}
+
+@media screen and (max-width:1200px){
+    .box{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+.boxC p{
+    width: 219px;
+    height: 82px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px;
+    background-color: greenyellow;
+    background: rgba(75, 55, 55, 1);
+    background: linear-gradient(180deg, rgba(0, 0, 0), rgba(122, 91, 91, 0.8) 150%),
+        linear-gradient(240deg, rgb(255, 115, 0), rgb(255, 115, 0) ),
+        linear-gradient(300deg,rgb(255, 115, 0), rgb(255, 115, 0));
+    border: solid rgb(63, 28, 0);
+    padding-top: 28px;
+    text-align: center;
+    transition-duration: 1s;
+    color:rgb(255, 115, 0);
+    font-weight: normal;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45); 
+}
+
+.boxC{    
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 20px;
+    width: 225px;
+    height: 110px;
+    text-align: center;
+    vertical-align: center;
+    cursor: default;
+}
+
+.containerC .boxC:hover{
+    background-color: black; 
+}
+
+.boxC .pover{
+    color: rgb(0, 1, 39);
+    background-color: rgb(255, 115, 0);
+    background-image: linear-gradient(to right, 
+    rgb(63, 28, 0), 
+    rgb(100, 45, 0), 
+    rgb(150, 67, 0) ,
+    rgb(230, 103, 0), 
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0), 
+    rgb(230, 103, 0), 
+    rgb(150, 67, 0), 
+    rgb(100, 45, 0), 
+    rgb(63, 28, 0));
+    border: solid rgb(63, 28, 0);
+    transition-duration: 0s;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: none;  
+}
+
+@media screen and (max-width:840px){
+    .boxC .pover{
+        font-size: 1.5rem;
+    }
+}
+
+.containerC{
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+@media screen and (max-width:840px){
+    .containerC{
+        padding-right:10%;
+        padding-left: 10%;
+    }
+}
+
+.boxmerge{
+    height: auto;
+    background-color: rgb(151, 255, 110);
+    background-image: linear-gradient(to right, 
+    rgb(63, 28, 0), 
+    rgb(100, 45, 0), 
+    rgb(150, 67, 0) ,
+    rgb(230, 103, 0), 
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0), 
+    rgb(230, 103, 0), 
+    rgb(150, 67, 0), 
+    rgb(100, 45, 0), 
+    rgb(63, 28, 0));
+    box-sizing: border-box;
+    width: 225px;
+    margin: 0px;
+    margin-top: -15px;
+    text-align: center;
+    border-left: solid rgb(63, 28, 0);
+    border-right: solid rgb(63, 28, 0);
+}
+
+.cenikHidden{
+    border-radius: 10px 40px 0px 40px;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    padding: 12px 15px 15px 15px;
+    width:80%;
+    margin: 0% 10% 0% 10%;
+    border: solid rgb(63, 28, 0);
+    margin-top: -3px;
+    display: auto;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width:840px){
+    .cenikHidden{
+        width:100%;
+        margin:0px;
+        margin-top: -3px;
+    }
+}    
+    
+section #cenikS{
+    max-width: 100%;
+    margin:0px;
+    min-width: 640px;
+}
+
+#cenik td p{
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin: 0px;
+}
+
+@media screen and (max-width:840px){
+    #cenik td p{
+        font-size: 1.4rem;
+    }
+}
+
+#cenik .price{
+    width: 24%;
+    text-align: right;
+}
+
+.boxG{
+    width: 33.3%;
+    height: 225px;
+    overflow: hidden; 
+}
+
+.boxG img{
+    position: relative;
+    top: 50%;
+    left: -10%;
+    width:120%;
+    transform: translateX(10%);
+    transform: translateY(-50%);  
+}
+
+@media screen and (max-width:1200px){
+    .boxG{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:840px){
+    .box, .boxG{
+        width: 100%;
+        margin:0px;
+        margin: 10px;
+    }
+}
+
+#galerie{
+    background-color: white;
+}
+
+.boxFormular p{
+    width: 300px;
+    height: 45px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px;
+    background-color: greenyellow;
+    background: rgba(75, 55, 55, 1);
+    background: linear-gradient(180deg, rgba(0, 0, 0), rgba(122, 91, 91, 0.8) 150%),
+        linear-gradient(240deg, rgb(255, 115, 0), rgb(255, 115, 0) ),
+        linear-gradient(300deg,rgb(255, 115, 0), rgb(255, 115, 0));
+    border: solid rgb(63, 28, 0);
+    padding-top: 22px;
+    text-align: center;
+    transition-duration: 1s;
+    color:rgb(255, 115, 0);
+    font-weight: normal;
+}
+
+.boxFormular p:hover{
+    background-color:rgb(255, 115, 0);
+    color: black;
+    background-image: linear-gradient(to right, 
+    rgb(63, 28, 0), 
+    rgb(100, 45, 0), 
+    rgb(150, 67, 0) ,
+    rgb(230, 103, 0), 
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0), 
+    rgb(230, 103, 0), 
+    rgb(150, 67, 0), 
+    rgb(100, 45, 0), 
+    rgb(63, 28, 0));  
+}
+
+.boxFormular{      
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#kontaktyS{
+    padding-bottom: -5px;
+}
+
+.containerK{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.boxK p{
+    padding: 5px;
+    margin: 0px;
+}
+
+@media screen and (max-width:840px){
+    .boxK p{
+        font-size: 1.2rem;
+    }
+}   
+
+.boxK{
+    width: 300px;
+    height: 420px;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    box-sizing: border-box;
+    border-radius: 20px 20px 40px 40px;
+    padding: 10px 30px 15px 30px;
+    margin-bottom: 10px; 
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45);
+}
+
+.boxK div p, .boxK div a{
+    display: inline-flex;
+}
+
+.fotoK{
+    width: 240px;
+    height: 253px;
+}
+
+#content{
+    min-width: 640px;
+}
+
+footer{
+    height: 30px;
+    background-color: rgb(39, 39, 39);
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+}
+
+footer div{
+    color: rgb(200, 100,50);
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 3px 0px 0px 0px;
+}
+
+#formular{
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000; 
+    position: fixed;
+    /* inset: 0px;
+    inset-block: 0px; */
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#insideFormular{
+    background-color: greenyellow;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    box-sizing: content-box;
+    overflow-y: auto;
+    max-height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3; 
+    min-width: 510px;
+}
+
+@media screen and (max-width:1400px){
+    #insideFormular{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width:840px){
+    #insideFormular{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+input, textarea, button, select, option{
+    background-color: rgb(240, 255, 221);
+    color: rgb(0, 4, 128);
+    border-color: darkgoldenrod;
+    border-radius: 8px;
+    width: 219px;
+    height: 45px;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+select{
+    background: url(assets/icons/arrowSmall2.png) no-repeat right rgb(240, 255, 221);
+    background-position: right 4px bottom 14px;
+    background-position-x: right 4px;
+    background-position-x: 200px;
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    cursor: pointer;
+}
+
+select:hover{
+    background-color: rgb(225, 230, 219);
+}
+
+textarea{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    resize: none;
+    height: 250px;
+    width: 100%;
+}
+
+button, .upload{
+    background-color: darkgoldenrod;
+    width: 110px;
+    height: 45px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px;
+    background-color: greenyellow;
+    background: rgba(75, 55, 55, 1);
+    background: linear-gradient(180deg, rgba(0, 0, 0), rgba(122, 91, 91, 0.8) 150%),
+        linear-gradient(240deg, rgb(255, 115, 0), rgb(255, 115, 0) ),
+        linear-gradient(300deg,rgb(255, 115, 0), rgb(255, 115, 0));
+    border: solid rgb(63, 28, 0);
+    vertical-align: middle;
+    text-align: center;
+    transition-duration: 1s;
+    color:rgb(255, 115, 0);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button:hover, .upload:hover{
+    background-color:rgb(255, 115, 0);
+    background-image: linear-gradient(to right, 
+    rgb(63, 28, 0), 
+    rgb(100, 45, 0), 
+    rgb(150, 67, 0) ,
+    rgb(230, 103, 0), 
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0),
+    rgb(255, 115, 0), 
+    rgb(230, 103, 0), 
+    rgb(150, 67, 0), 
+    rgb(100, 45, 0), 
+    rgb(63, 28, 0));
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+   color: rgb(0, 1, 39);
+}
+
+label{
+min-width: 100px;
+display: inline-block;
+}
+
+ #clickToFill{
+border: hidden;
+color: blue;
+background: transparent;
+width: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+position: absolute;
+font-size: 1.1rem;
+color: whitesmoke;
+font-style: italic;
+}
+
+.default, #default{
+    color: rgb(82, 82, 82);
+    background-color: rgb(206, 206, 206);
+}
+
+.upload:hover{
+    height: 35px;
+    width: 185px;
+}
+
+.upload{
+    display: inline-block;
+    height: 35px;
+    width: 185px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
+#upload{
+    background:   rgb(240, 255, 221) url(assets/icons/crossSmall.png) no-repeat right;
+    background-position: right 5px bottom 13px;
+    background-position-x: right 5px;
+    color: rgb(0, 4, 128);
+    border: 2px solid;
+    border-color: darkgoldenrod;
+    border-radius: 8px;
+    padding: 0px 5px 0px 8px;
+    font-size: 1.1rem;
+    float: left;
+    text-align: center;
+    height: min-content;
+    align-self: center;
+    margin: 5px;
+    padding: 8px;
+    padding-right: 50px;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.verticalFlex{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.back{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+#co{
+    display: inline-block;
+}
+
+.block{
+    width: 300px;
+    height: 420px;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    box-sizing: border-box;
+    border-radius: 20px 20px 40px 40px;
+    padding: 10px 30px 15px 30px;
+    margin-bottom: 10px; 
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45);
+}
+
+.containerBazar{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+/* .containerBazar:after {
+    content: "";
+    flex: auto;
+
+} */
+.boxBazar p{
+    padding: 5px;
+    margin: 0px;
+    
+}
+.boxBazar{
+    width: 300px;
+    height: 380px;
+    background-color: greenyellow;
+    background: linear-gradient( greenyellow, 80%, rgb(200, 255, 47));
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 30px 15px 30px;
+    margin-bottom: 10px; 
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.45);
+}
+
+.boxBazar div p, .boxBazar div a{
+    display: inline-flex;
+}
+
+.fotoBazar{
+    width: 240px;
+}
+
+.shadowPic{
+    position: absolute; 
+    width: 240px; 
+    height: 253px; 
+    top:0; 
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.65);
+}
+
+.chart, .chart:hover{
+    width: 300px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -10px;
+    border: solid rgb(130, 177, 35);
+    border-top: transparent;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.bazarAlign{
+    padding: 0px;
+    margin: 0px;
+}
+
+.shadow{
+    position: relative; 
+    width: 240px; 
+    height: 253px
+}
+
+.icon{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.noDisplay{
+    display: none;
+}

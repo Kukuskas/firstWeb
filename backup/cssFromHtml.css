@@ -1,0 +1,84 @@
+.main .yellow {
+    color: darkviolet;
+}
+.yellow {
+    color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+input{
+        background-color: red;
+        border-color: darkorchid;
+        border-block-color: blue;
+    }
+button{
+    background-color: blue;
+}
+input.inputColor2 {
+    background-color: chartreuse;
+    border-color:darkred
+}
+input.inputColor6 {
+    background-color: initial;
+    border-color: white;
+}
+input[type="date"]{
+    background-color: darkslateblue;
+}
+.inputColor7 {
+    background-color: firebrick !important;
+}
+a{
+    color: black;
+}
+a:hover {
+    background-color: orange;
+}
+a:visited{
+    background-color: purple;
+    color: green
+}
+body{
+    background-color: lightgrey;
+}
+
+p{
+    display: inline
+    /*display: block*/
+}
+table, td/*, th*/ {
+    border: 1px solid red;
+}
+p{
+    line-height: 0.5 rem; /* 1em === 16px, 0.5em === 8px*/
+width: 100%;
+height: 100vh;
+}
+.background {
+    background-image: url("blabla.jpg");
+    background-repeat: no-repeat; /*repeat-x, repeat-y */
+    background-position: center center;
+}
+table{
+    width: 100%;
+} 
+.sudyradek {
+    background-color: floralwhite;
+}
+tr:nth-child(odd){
+    background-color: forestgreen;
+}
+tr:nth-child(1).barva th:nth-child(3){
+    background-color: darkcyan;
+}
+th:nth-child(3){
+    background-color: orange;
+}
+
+h1{
+    color: darkblue;
+}
+
+tr:nth-child(1).barva{
+    background-color: darkcyan;
+}
+
